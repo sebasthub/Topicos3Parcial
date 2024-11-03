@@ -175,6 +175,7 @@
     <Compile Include="Controllers\CursosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProfessoresController.cs" />
     <Compile Include="Controllers\SalasController.cs" />
     <Compile Include="Controllers\UnidadesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -187,6 +188,10 @@
     <Compile Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.cs" />
     <Compile Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.Designer.cs">
       <DependentUpon>202411031728298_adicionado vinculo entre professor e sala em agendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411031735149_criado relacao professor curso.cs" />
+    <Compile Include="Migrations\202411031735149_criado relacao professor curso.Designer.cs">
+      <DependentUpon>202411031735149_criado relacao professor curso.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -304,6 +309,11 @@
     <Content Include="Views\Agendamentoes\Details.cshtml" />
     <Content Include="Views\Agendamentoes\Edit.cshtml" />
     <Content Include="Views\Agendamentoes\Index.cshtml" />
+    <Content Include="Views\Professores\Create.cshtml" />
+    <Content Include="Views\Professores\Delete.cshtml" />
+    <Content Include="Views\Professores\Details.cshtml" />
+    <Content Include="Views\Professores\Edit.cshtml" />
+    <Content Include="Views\Professores\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -341,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.resx">
       <DependentUpon>202411031728298_adicionado vinculo entre professor e sala em agendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411031735149_criado relacao professor curso.resx">
+      <DependentUpon>202411031735149_criado relacao professor curso.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

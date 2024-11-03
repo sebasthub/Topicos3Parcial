@@ -11,6 +11,7 @@ using Topicos3Parcial.Models;
 
 namespace Topicos3Parcial.Controllers
 {
+    [Authorize]
     public class SalasController : Controller
     {
         private AgendamentoDbContext db = new AgendamentoDbContext();

@@ -10,6 +10,7 @@ using Topicos3Parcial.Models;
 
 namespace Topicos3Parcial.Controllers
 {
+    [Authorize]
     public class AgendamentoesController : Controller
     {
         private AgendamentoDbContext db = new AgendamentoDbContext();
