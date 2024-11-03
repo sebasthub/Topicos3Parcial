@@ -11,5 +11,8 @@ namespace ProjetoEnsalamento.Models
         public string Indentificador { get; set;}
         public int BlocoId { get; set; }
         public Bloco Bloco { get; set; }
+
+        public ICollection<Sala> Sala { get; set; }
+
     }
 }

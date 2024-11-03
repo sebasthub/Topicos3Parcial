@@ -7,13 +7,13 @@ namespace Topicos3Parcial.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class relacaoblocoandar : IMigrationMetadata
+    public sealed partial class inicial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(relacaoblocoandar));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(inicial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202411031334460_relacao bloco andar"; }
+            get { return "202411031651017_inicial"; }
         }
         
         string IMigrationMetadata.Source

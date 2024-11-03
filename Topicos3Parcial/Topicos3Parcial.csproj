@@ -173,21 +173,14 @@
     <Compile Include="Controllers\BlocoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SalasController.cs" />
     <Compile Include="Controllers\UnidadesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411022333185_Inicial.cs" />
-    <Compile Include="Migrations\202411022333185_Inicial.Designer.cs">
-      <DependentUpon>202411022333185_Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202411031321168_relacao bloco unidade.cs" />
-    <Compile Include="Migrations\202411031321168_relacao bloco unidade.Designer.cs">
-      <DependentUpon>202411031321168_relacao bloco unidade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202411031334460_relacao bloco andar.cs" />
-    <Compile Include="Migrations\202411031334460_relacao bloco andar.Designer.cs">
-      <DependentUpon>202411031334460_relacao bloco andar.cs</DependentUpon>
+    <Compile Include="Migrations\202411031651017_inicial.cs" />
+    <Compile Include="Migrations\202411031651017_inicial.Designer.cs">
+      <DependentUpon>202411031651017_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -290,6 +283,11 @@
     <Content Include="Views\Andares\Details.cshtml" />
     <Content Include="Views\Andares\Edit.cshtml" />
     <Content Include="Views\Andares\Index.cshtml" />
+    <Content Include="Views\Salas\Create.cshtml" />
+    <Content Include="Views\Salas\Delete.cshtml" />
+    <Content Include="Views\Salas\Details.cshtml" />
+    <Content Include="Views\Salas\Edit.cshtml" />
+    <Content Include="Views\Salas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -322,14 +320,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202411022333185_Inicial.resx">
-      <DependentUpon>202411022333185_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202411031321168_relacao bloco unidade.resx">
-      <DependentUpon>202411031321168_relacao bloco unidade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202411031334460_relacao bloco andar.resx">
-      <DependentUpon>202411031334460_relacao bloco andar.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411031651017_inicial.resx">
+      <DependentUpon>202411031651017_inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
