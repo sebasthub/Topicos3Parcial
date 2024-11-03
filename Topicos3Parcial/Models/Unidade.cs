@@ -10,5 +10,7 @@ namespace ProjetoEnsalamento.Models
         public int ID { get; set; }
         public string Nome { get; set; }
         public String Localização { get; set; }
+
+        public ICollection<Bloco> Blocos { get; set; }
     }
 }

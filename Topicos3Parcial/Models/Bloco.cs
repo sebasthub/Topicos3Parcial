@@ -9,6 +9,7 @@ namespace ProjetoEnsalamento.Models
     {
         public int Id { get; set; }
         public string Indentificador { get; set; }
+        public int UnidadeId { get; set; }
         public Unidade Unidade { get; set; }
     }
 }
