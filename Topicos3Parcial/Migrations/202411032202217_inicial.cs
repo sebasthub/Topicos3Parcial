@@ -12,16 +12,16 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        ProfessorId = c.Int(nullable: false),
+                        SalaId = c.Int(nullable: false),
                         Horario = c.DateTime(nullable: false),
                         Recorrente = c.Boolean(nullable: false),
-                        Professor_Id = c.Int(),
-                        Sala_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Professors", t => t.Professor_Id)
-                .ForeignKey("dbo.Salas", t => t.Sala_Id)
-                .Index(t => t.Professor_Id)
-                .Index(t => t.Sala_Id);
+                .ForeignKey("dbo.Professors", t => t.ProfessorId, cascadeDelete: true)
+                .ForeignKey("dbo.Salas", t => t.SalaId, cascadeDelete: true)
+                .Index(t => t.ProfessorId)
+                .Index(t => t.SalaId);
             
             CreateTable(
                 "dbo.Professors",
@@ -30,11 +30,11 @@
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         Indentificador = c.String(),
-                        Curso_Id = c.Int(),
+                        CursoId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Cursoes", t => t.Curso_Id)
-                .Index(t => t.Curso_Id);
+                .ForeignKey("dbo.Cursoes", t => t.CursoId, cascadeDelete: true)
+                .Index(t => t.CursoId);
             
             CreateTable(
                 "dbo.Cursoes",
@@ -68,7 +68,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Indentificador = c.String(),
+                        Indentificador = c.String(maxLength: 4),
                         BlocoId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
@@ -80,7 +80,7 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Indentificador = c.String(),
+                        Indentificador = c.String(maxLength: 4),
                         UnidadeId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
@@ -101,20 +101,20 @@
         
         public override void Down()
         {
-            DropForeignKey("dbo.Agendamentoes", "Sala_Id", "dbo.Salas");
-            DropForeignKey("dbo.Agendamentoes", "Professor_Id", "dbo.Professors");
-            DropForeignKey("dbo.Professors", "Curso_Id", "dbo.Cursoes");
             DropForeignKey("dbo.Salas", "CursoId", "dbo.Cursoes");
             DropForeignKey("dbo.Salas", "AndarId", "dbo.Andars");
             DropForeignKey("dbo.Blocoes", "UnidadeId", "dbo.Unidades");
             DropForeignKey("dbo.Andars", "BlocoId", "dbo.Blocoes");
+            DropForeignKey("dbo.Agendamentoes", "SalaId", "dbo.Salas");
+            DropForeignKey("dbo.Professors", "CursoId", "dbo.Cursoes");
+            DropForeignKey("dbo.Agendamentoes", "ProfessorId", "dbo.Professors");
             DropIndex("dbo.Blocoes", new[] { "UnidadeId" });
             DropIndex("dbo.Andars", new[] { "BlocoId" });
             DropIndex("dbo.Salas", new[] { "CursoId" });
             DropIndex("dbo.Salas", new[] { "AndarId" });
-            DropIndex("dbo.Professors", new[] { "Curso_Id" });
-            DropIndex("dbo.Agendamentoes", new[] { "Sala_Id" });
-            DropIndex("dbo.Agendamentoes", new[] { "Professor_Id" });
+            DropIndex("dbo.Professors", new[] { "CursoId" });
+            DropIndex("dbo.Agendamentoes", new[] { "SalaId" });
+            DropIndex("dbo.Agendamentoes", new[] { "ProfessorId" });
             DropTable("dbo.Unidades");
             DropTable("dbo.Blocoes");
             DropTable("dbo.Andars");

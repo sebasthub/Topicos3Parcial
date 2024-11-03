@@ -13,7 +13,7 @@ namespace Topicos3Parcial.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202411031651017_inicial"; }
+            get { return "202411032202217_inicial"; }
         }
         
         string IMigrationMetadata.Source

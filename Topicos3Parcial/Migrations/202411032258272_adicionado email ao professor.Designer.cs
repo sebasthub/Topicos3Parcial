@@ -7,13 +7,13 @@ namespace Topicos3Parcial.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class adicionadovinculoentreprofessoresalaemagendamento : IMigrationMetadata
+    public sealed partial class adicionadoemailaoprofessor : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(adicionadovinculoentreprofessoresalaemagendamento));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(adicionadoemailaoprofessor));
         
         string IMigrationMetadata.Id
         {
-            get { return "202411031728298_adicionado vinculo entre professor e sala em agendamento"; }
+            get { return "202411032258272_adicionado email ao professor"; }
         }
         
         string IMigrationMetadata.Source

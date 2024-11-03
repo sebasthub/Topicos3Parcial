@@ -181,17 +181,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411031651017_inicial.cs" />
-    <Compile Include="Migrations\202411031651017_inicial.Designer.cs">
-      <DependentUpon>202411031651017_inicial.cs</DependentUpon>
+    <Compile Include="Migrations\202411032202217_inicial.cs" />
+    <Compile Include="Migrations\202411032202217_inicial.Designer.cs">
+      <DependentUpon>202411032202217_inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.cs" />
-    <Compile Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.Designer.cs">
-      <DependentUpon>202411031728298_adicionado vinculo entre professor e sala em agendamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202411031735149_criado relacao professor curso.cs" />
-    <Compile Include="Migrations\202411031735149_criado relacao professor curso.Designer.cs">
-      <DependentUpon>202411031735149_criado relacao professor curso.cs</DependentUpon>
+    <Compile Include="Migrations\202411032258272_adicionado email ao professor.cs" />
+    <Compile Include="Migrations\202411032258272_adicionado email ao professor.Designer.cs">
+      <DependentUpon>202411032258272_adicionado email ao professor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -346,14 +342,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202411031651017_inicial.resx">
-      <DependentUpon>202411031651017_inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411032202217_inicial.resx">
+      <DependentUpon>202411032202217_inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.resx">
-      <DependentUpon>202411031728298_adicionado vinculo entre professor e sala em agendamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202411031735149_criado relacao professor curso.resx">
-      <DependentUpon>202411031735149_criado relacao professor curso.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411032258272_adicionado email ao professor.resx">
+      <DependentUpon>202411032258272_adicionado email ao professor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,7 +10,6 @@ using Topicos3Parcial.Models;
 
 namespace Topicos3Parcial.Controllers
 {
-    [Authorize]
     public class ProfessoresController : Controller
     {
         private AgendamentoDbContext db = new AgendamentoDbContext();
@@ -49,7 +48,7 @@ namespace Topicos3Parcial.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Indentificador,CursoId")] Professor professor)
+        public ActionResult Create([Bind(Include = "Id,Name,Indentificador,Email,CursoId")] Professor professor)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +82,7 @@ namespace Topicos3Parcial.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Indentificador,CursoId")] Professor professor)
+        public ActionResult Edit([Bind(Include = "Id,Name,Indentificador,Email,CursoId")] Professor professor)
         {
             if (ModelState.IsValid)
             {
