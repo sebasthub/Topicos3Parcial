@@ -9,7 +9,9 @@ namespace Topicos3Parcial.Models
     public class Agendamento
     {
         public int Id { get; set; }
+        public int ProfessorId { get; set; }
         public Professor Professor { get; set; }
+        public int SalaId { get; set; }
         public Sala Sala { get; set; }
         public DateTime Horario { get; set; }
         public Boolean Recorrente { get; set; }

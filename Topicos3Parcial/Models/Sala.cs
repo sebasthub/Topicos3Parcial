@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Topicos3Parcial.Models;
 
 namespace ProjetoEnsalamento.Models
 {
@@ -16,5 +17,7 @@ namespace ProjetoEnsalamento.Models
         public Andar Andar { get; set; }
         public int? CursoId { get; set; } = null;
         public Curso Curso { get; set; } = null;
+
+        public ICollection<Agendamento> Agendamentos { get; set; }
     }
 }

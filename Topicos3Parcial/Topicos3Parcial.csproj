@@ -169,6 +169,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AgendamentoesController.cs" />
     <Compile Include="Controllers\AndaresController.cs" />
     <Compile Include="Controllers\BlocoesController.cs" />
     <Compile Include="Controllers\CursosController.cs" />
@@ -182,6 +183,10 @@
     <Compile Include="Migrations\202411031651017_inicial.cs" />
     <Compile Include="Migrations\202411031651017_inicial.Designer.cs">
       <DependentUpon>202411031651017_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.cs" />
+    <Compile Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.Designer.cs">
+      <DependentUpon>202411031728298_adicionado vinculo entre professor e sala em agendamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -294,6 +299,11 @@
     <Content Include="Views\Cursos\Details.cshtml" />
     <Content Include="Views\Cursos\Edit.cshtml" />
     <Content Include="Views\Cursos\Index.cshtml" />
+    <Content Include="Views\Agendamentoes\Create.cshtml" />
+    <Content Include="Views\Agendamentoes\Delete.cshtml" />
+    <Content Include="Views\Agendamentoes\Details.cshtml" />
+    <Content Include="Views\Agendamentoes\Edit.cshtml" />
+    <Content Include="Views\Agendamentoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -328,6 +338,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202411031651017_inicial.resx">
       <DependentUpon>202411031651017_inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411031728298_adicionado vinculo entre professor e sala em agendamento.resx">
+      <DependentUpon>202411031728298_adicionado vinculo entre professor e sala em agendamento.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -12,5 +12,7 @@ namespace Topicos3Parcial.Models
         public string Name { get; set; } 
         public string Indentificador { get; set; }
         public Curso Curso { get; set; }
+        public ICollection<Agendamento> Agendamentos { get; set; }
+
     }
 }
