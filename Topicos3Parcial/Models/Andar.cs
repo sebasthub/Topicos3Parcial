@@ -9,5 +9,7 @@ namespace ProjetoEnsalamento.Models
     {
         public int Id { get; set; }
         public string Indentificador { get; set;}
+        public int BlocoId { get; set; }
+        public Bloco Bloco { get; set; }
     }
 }

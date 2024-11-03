@@ -169,6 +169,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AndaresController.cs" />
     <Compile Include="Controllers\BlocoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -183,6 +184,10 @@
     <Compile Include="Migrations\202411031321168_relacao bloco unidade.cs" />
     <Compile Include="Migrations\202411031321168_relacao bloco unidade.Designer.cs">
       <DependentUpon>202411031321168_relacao bloco unidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411031334460_relacao bloco andar.cs" />
+    <Compile Include="Migrations\202411031334460_relacao bloco andar.Designer.cs">
+      <DependentUpon>202411031334460_relacao bloco andar.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -280,6 +285,11 @@
     <Content Include="Views\Blocoes\Details.cshtml" />
     <Content Include="Views\Blocoes\Edit.cshtml" />
     <Content Include="Views\Blocoes\Index.cshtml" />
+    <Content Include="Views\Andares\Create.cshtml" />
+    <Content Include="Views\Andares\Delete.cshtml" />
+    <Content Include="Views\Andares\Details.cshtml" />
+    <Content Include="Views\Andares\Edit.cshtml" />
+    <Content Include="Views\Andares\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -317,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202411031321168_relacao bloco unidade.resx">
       <DependentUpon>202411031321168_relacao bloco unidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411031334460_relacao bloco andar.resx">
+      <DependentUpon>202411031334460_relacao bloco andar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

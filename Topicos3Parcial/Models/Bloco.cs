@@ -11,5 +11,6 @@ namespace ProjetoEnsalamento.Models
         public string Indentificador { get; set; }
         public int UnidadeId { get; set; }
         public Unidade Unidade { get; set; }
+        public ICollection<Andar> Andares { get; set; }
     }
 }
